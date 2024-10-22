@@ -9,7 +9,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(./images/banner.png);
+    url(./images/denizli022.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -157,9 +157,15 @@ p {
 }
 
 .row {
-  margin-top: 5%;
+  /* margin-top: 5%;
+  display: grid;*/
+
+  padding-top: 60px;
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .course-col {
@@ -198,7 +204,7 @@ h3 {
 }
 
 .campus-col {
-  flex-basis: 32%;
+  flex-basis: 28%;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
@@ -221,7 +227,7 @@ h3 {
 }
 
 .layer:hover {
-  background: rgba(226, 0, 0, 0.7);
+  background: rgba(10, 10, 10, 0.7);
 }
 
 .layer h3 {
@@ -242,35 +248,114 @@ h3 {
   opacity: 1;
 }
 
-/* facilities */
-.facilities {
+/* Activities */
+.container
+{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities {
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
 }
 
-.facilities-col {
-  flex-basis: 31%;
+.activities-col {
+  /* flex-basis: 31%;
+  background-color: white;
   border-radius: 10px;
   margin-bottom: 5%;
-  text-align: left;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s; */
+
+  flex-basis: 24%;
+  /* Ajuste la taille de la colonne pour prendre 31% de l'espace */
+  background-color: white;
+  /* Ajoute la couleur de fond */
+  border-radius: 5px;
+  /* Ajoute un arrondi sur les bords */
+  margin-bottom: 5%;
+  /* Espace en bas des images */
+  padding: 20px 12px;
+  /* Ajoute du padding à l'intérieur des colonnes */
+  box-sizing: border-box;
+  /* Inclut le padding et la bordure dans la largeur totale */
+  transition: 0.5s;
+  /* Transition douce pour tout changement sur cet élément */
 }
 
-.facilities-col img {
+.activities-col img {
   width: 100%;
   border-radius: 10px;
 }
 
-.facilities-col p {
+.activities-col p {
   padding: 0;
 }
 
-.facilities-col h3 {
+.activities-col h3 {
   margin-top: 16px;
   margin-bottom: 15px;
-  text-align: left;
+  text-align: center;
 }
+/* Zoom effect on hover */
+
+.activities-col:hover img {
+  transform: scale(1.1);
+  /* Zoom l'image de 10% lors du survol */
+}
+
+
+/* events */
+.events {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* .course-container {
+  display: flex;
+  overflow: hidden;
+  animation: scroll 20s linear infinite;
+  gap: 10px;
+} */
+
+.events-col {
+  flex-basis: 24%;
+    /* Ajuste la taille de la colonne pour prendre 31% de l'espace */
+    background-color: white;
+    /* Ajoute la couleur de fond */
+    border-radius: 5px;
+    /* Ajoute un arrondi sur les bords */
+    margin-bottom: 5%;
+    /* Espace en bas des images */
+    padding: 20px 12px;
+    /* Ajoute du padding à l'intérieur des colonnes */
+    box-sizing: border-box;
+    /* Inclut le padding et la bordure dans la largeur totale */
+    transition: 0.5s;
+    /* Transition douce pour tout changement sur cet élément */
+}
+
+.events-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  /* Optional: Add border radius */
+  transition: transform 0.3s ease;
+  /* Smooth transition for zoom effect */
+}
+
+.events-col:hover img {
+  transform: scale(1.1);
+  /* Zoom l'image de 10% lors du survol */
+}
+
 
 /* tetimonials */
 
